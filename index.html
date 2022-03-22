@@ -1,0 +1,43 @@
+ 
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    <h2 class="btn btn-default heading" >IMAGE RECOGNITION WEB APP</h2>
+      <br><br>
+
+      <p style="font-size: 22px;" class="btn btn-default heading">MODEL IS TRAINED TO IDENTIFY THE FOLLOWING OBJECTS: </p>
+       <br><br>
+       <b class="name_of_objects" style="font-size: 22px;">IRON MAN <hr> SPIDERMAN <hr> CAPTAIN AMERICA <hr></b>
+      <p class="text-">Webcam View - </p>
+      <div id="camera"></div>
+      <br><br>
+      <div id="result"></div>
+      <br><br>
+      <button class="btn btn-default" onclick="take_snapshot();">Capture Image</button>
+      <br><br>
+      <button class="btn btn-default" onclick="checking();">Idenify Image</button>
+      <br><br>
+
+      <p style="font-size: 22px;">Object :<span id="result_object"></span>  </p>
+      <p style="font-size: 22px;">Accuracy :<span id="result_accuracy"></span>  </p>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>

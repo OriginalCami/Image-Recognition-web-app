@@ -1,0 +1,11 @@
+body
+{
+    background-color: rgb(128, 240, 212);
+    color: rgb(255, 255, 255);
+}
+
+#camera{
+    height: 340px;
+    width: 340px;
+    border: 6px dotted white ;
+}
